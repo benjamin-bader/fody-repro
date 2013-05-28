@@ -3,12 +3,14 @@ ILMerge /internalize /targetplatform:4.0 /out:Path\To\Target\Tools\Weaver.Fody.d
 
 Expected Build Output:
 Target.exe main module has:
+
 ```
 .custom instance void [Shared]Shared.DemoAttribute::.ctor()
 ```
 
 Actual Build Output:
 Target.exe main module has:
+
 ```
 .custom instance void [Weaver.Fody]Shared.DemoAttribute::.ctor()
 ```
